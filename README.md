@@ -46,10 +46,9 @@ Using what you have learned about Express, Express Routing, RESTful routing, CRU
 5. Add Mongoose functionality!
 
 **Recommended Workflow:**
-1. Stub out your routes, write them `res.send("test")` for initial decleration.
-2. Declare your model and migrate.
-3. Link your model to your server.
-4. Update your routes and make the magic happen!
+1. Stub out your routes. For the purposes of initial declaration, `res.send("test")` to make sure you're hitting them.
+2. Link your model to your server.
+3. Update your routes to "do something" and make the magic happen!
 
 -------
 
