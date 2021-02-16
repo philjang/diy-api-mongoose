@@ -55,6 +55,8 @@ Using what you have learned about Express, Express Routing, RESTful routing, CRU
 ## Bonus:
 Add a second model to your API. This model should relate to your first model via a 1:M relationship. 
 
+This is a great chance to familiarize yourself with the Mongoose docs to achieve your goals. They're extensive, so don't worry if you get overwhelmed! Take this as an opportunity to play around with different methods in a no-stress environment.
+
 Once added, update your GET and POST routes for this second model which allow you do the following with your API: 
 1. Show all elements from second model that relate to your element from first model at :id. 
 2. Add a new element to your original model that include related elements from this second model at :id.
