@@ -18,7 +18,7 @@ Using what you have learned about Express, Express Routing, RESTful routing, CRU
 |:-----------:|:----:|
 | \_id | integer |
 |name | string |
-|wodgets | integer |
+|widgets | integer |
 |purpose | string |
 
 
