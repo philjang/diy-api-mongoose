@@ -46,15 +46,16 @@ Using what you have learned about Express, Express Routing, RESTful routing, CRU
 5. Add Mongoose functionality!
 
 **Recommended Workflow:**
-1. Stub out your routes, write them `res.send("test")` for initial decleration.
-2. Declare your model and migrate.
-3. Link your model to your server.
-4. Update your routes and make the magic happen!
+1. Stub out your routes. For the purposes of initial declaration, `res.send("test")` to make sure you're hitting them.
+2. Link your model to your server.
+3. Update your routes to "do something" and make the magic happen!
 
 -------
 
 ## Bonus:
 Add a second model to your API. This model should relate to your first model via a 1:M relationship. 
+
+This is a great chance to familiarize yourself with the Mongoose docs to achieve your goals. They're extensive, so don't worry if you get overwhelmed! Take this as an opportunity to play around with different methods in a no-stress environment.
 
 Once added, update your GET and POST routes for this second model which allow you do the following with your API: 
 1. Show all elements from second model that relate to your element from first model at :id. 
