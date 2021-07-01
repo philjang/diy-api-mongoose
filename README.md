@@ -2,9 +2,17 @@
 
 ## **Deliverable**:
 
-It's time to make your own API! 
+For our first MERN app mini project you will be building a personal blog (longterm feel free to use this for outcomes!). First, it's time to make your own API! 
 
 Using what you have learned about Express, Express Routing, RESTful routing, CRUD operations, and Mongoose, use the Mongoose ODM to implement full CRUD functionality on a model (subject of your choosing).
+
+
+## What is a MERN App? 
+MERN is an acronym for an app that utilizes Mongo/Mongoose and Express for the backend (typically an API layer), and React/Node for the frontend. 
+
+How we make it work: 
+- we will build an express server that makes mongoose CRUD requests to a Mongo db. 
+- we will build a React frontend that will make calls to our express API for any data. 
 
 -----
 
@@ -18,8 +26,8 @@ Using what you have learned about Express, Express Routing, RESTful routing, CRU
 |:-----------:|:----:|
 | \_id | integer |
 |name | string |
-|widgets | integer |
-|purpose | string |
+|title | integer |
+|content | string |
 
 
 2. Your API should be accessible via five routes: 
@@ -28,11 +36,11 @@ Using what you have learned about Express, Express Routing, RESTful routing, CRU
 
 | Method | Action | URL | Functionality |
 |--------|:------:|:---:|:--------------|
-| GET | index | /widgets | list all widgets |
-| POST | create | /widgets | add a widget |
-| GET | detail/show | /widgets/:id | show one widget |
-| PUT | update | /widgets/:id | update one widget |
-| DELETE | delete | /widgets/:id | delete one widget |
+| GET | index | /blog | list all blog posts |
+| POST | create | /blog | add a new blog post |
+| GET | detail/show | /blog/:id | show one blog post |
+| PUT | update | /blog/:id | update one blog post |
+| DELETE | delete | /blog/:id | delete one blog post |
 
 -------
 
@@ -52,11 +60,3 @@ Using what you have learned about Express, Express Routing, RESTful routing, CRU
 
 -------
 
-## Bonus:
-Add a second model to your API. This model should relate to your first model via a 1:M relationship. 
-
-This is a great chance to familiarize yourself with the Mongoose docs to achieve your goals. They're extensive, so don't worry if you get overwhelmed! Take this as an opportunity to play around with different methods in a no-stress environment.
-
-Once added, update your GET and POST routes for this second model which allow you do the following with your API: 
-1. Show all elements from second model that relate to your element from first model at :id. 
-2. Add a new element to your original model that include related elements from this second model at :id.
