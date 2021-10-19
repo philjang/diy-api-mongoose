@@ -42,6 +42,8 @@ How we make it work:
 | PUT | update | /blog/:id | update one blog post |
 | DELETE | delete | /blog/:id | delete one blog post |
 
+3. Although the above suggested theme for your **API** is **blogs**, if you would like make an API with a different theme you may do so. However, your API must include the five routes listed above if you choose to theme your API differently. 
+
 -------
 
 ## **Steps to Achieve**
