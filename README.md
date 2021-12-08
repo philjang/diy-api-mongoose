@@ -56,7 +56,7 @@ How we make it work:
 5. Add Mongoose functionality!
 
 **Recommended Workflow:**
-1. Stub out your routes. For the purposes of initial declaration, `res.send("test")` to make sure you're hitting them.
+1. Stub out your routes. For the purposes of initial declaration, `res.json({message: "test"})` to make sure you're hitting them.
 2. Link your model to your server.
 3. Update your routes to "do something" and make the magic happen!
 
