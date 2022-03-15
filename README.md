@@ -8,6 +8,7 @@ Using what you have learned about Express, Express Routing, RESTful routing, CRU
 
 
 ## What is a MERN App? 
+
 MERN is an acronym for an app that utilizes Mongo/Mongoose and Express for the backend (typically an API layer), and React/Node for the frontend. 
 
 How we make it work: 
@@ -24,7 +25,6 @@ How we make it work:
 
 | column name | type |
 |:-----------:|:----:|
-| \_id | integer |
 |name | string |
 |title | integer |
 |content | string |
@@ -62,3 +62,33 @@ How we make it work:
 
 -------
 
+## Part 2 -- Relational Data
+
+Add a second model to your API. This model should relate to your first model via a 1:M relationship. 
+
+This the model relationship can be created with either an embedded document or a reference to another document.
+
+Once added, update your GET and POST routes for this second model which allow you do the following with your API: 
+1. Show all elements from second model that relate to your element from first model at :id. 
+2. Add a new element to your original model that include related elements from this second model at :id.
+
+The follow is an example an model digram and RESTful routing chart of adding comments to to the blog API. You may
+follow this example if you adding comments to the blog API example from before, or if you are feeling bold, you can create a differently themed data model.
+
+**Comment Model**
+
+| column name | type |
+|:-----------:|:----:|
+|blog | ObjectId(ref to blog) |
+|content | string |
+
+**ROUTES**
+
+| Method | Action | URL | Functionality |
+|--------|:------:|:---:|:--------------|
+| POST | create | /blog/:id/comment | add comment to blog post |
+| GET | detail/show | /blog/:id | show one blog post and all comments on it |
+| PUT | update | /commnet/:id | update one comment |
+| DELETE | delete | /comment/:id | delete one comment |
+
+-------
