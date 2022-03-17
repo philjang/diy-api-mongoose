@@ -52,7 +52,7 @@ Using what you have learned about Express, Express Routing, RESTful routing, CRU
 
 -------
 
-## Bonus:
+## Part 2
 Add a second model to your API. This model should relate to your first model via a 1:M relationship. 
 
 This is a great chance to familiarize yourself with the Mongoose docs to achieve your goals. They're extensive, so don't worry if you get overwhelmed! Take this as an opportunity to play around with different methods in a no-stress environment.
